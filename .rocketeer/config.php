@@ -38,7 +38,7 @@ return [
     // and store them locally
     'connections'      => [
         'production' => [
-            'host'      => '192.168.33.11',
+            'host'      => '10.0.0.11',
             'username'  => 'deploy',
             'password'  => '0000',
             'key'       => '',
