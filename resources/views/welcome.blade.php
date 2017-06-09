@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                BOP    Laravel
+                MOUETTE    Laravel
 		    PHP DE MERDE
                 </div>
 
