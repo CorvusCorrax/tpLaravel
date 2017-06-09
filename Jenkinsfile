@@ -13,7 +13,6 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'echo bonjour'
         sh 'rocketeer deploy'
       }
     }
