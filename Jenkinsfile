@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Lauch test') {
       steps {
-        sh './tpLaravel/vendor/bin/phpunit  ./tpLaravel/tests/Unit/ExampleTest.php'
+        sh './vendor/bin/phpunit  ./tests/Unit/ExampleTest.php'
       }
     }
     stage('Deploy') {
