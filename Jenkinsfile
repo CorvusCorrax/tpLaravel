@@ -1,25 +1,25 @@
 pipeline {
   agent any
-  triggers {
-    pollSCM('* * * * *')
-  }
   stages {
     stage('build') {
       steps {
         sh 'composer install'
+        sh 'cp .env.example .env'
+        sh 'php artisan key:generate'
       }
     }
-        stage('Lauch test'){
-            steps {
-                sh './tpLaravel/vendor/bin/phpunit  ./tpLaravel/tests/Unit/ExampleTest.php'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                sh "echo bonjour"
-                sh "cd tpLaravel && rocketeer deploy"
-            }
-        }
+    stage('Lauch test') {
+      steps {
+        sh './vendor/bin/phpunit'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        sh 'rocketeer deploy'
+      }
+    }
+  }
+  triggers {
+    pollSCM('* * * * *')
   }
 }
