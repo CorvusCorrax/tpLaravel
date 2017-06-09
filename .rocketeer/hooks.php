@@ -26,7 +26,7 @@ return [
         'setup'   => [],
         'deploy'  => [
 		'cp .env.example .env',
-		'php artisan key:generate'
+		'php artisan key:generate',
 		'php artisan serve --host 0.0.0.0'
 	],
         'cleanup' => [],
