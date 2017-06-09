@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                   Laravel
+                   MERDE Laravel
 		   TORTUE CONTRE GODZILLA
                 </div>
 
