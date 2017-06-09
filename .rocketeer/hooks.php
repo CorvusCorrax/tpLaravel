@@ -24,7 +24,11 @@ return [
     // Tasks to execute after the core Rocketeer Tasks
     'after'  => [
         'setup'   => [],
-        'deploy'  => [],
+        'deploy'  => [
+		'cp .env.example .env',
+		'php artisan key:generate'
+		'php artisan serve --host 0.0.0.0'
+	],
         'cleanup' => [],
     ],
 
