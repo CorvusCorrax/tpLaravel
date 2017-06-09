@@ -79,8 +79,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                MOUETTE ZPDFIUZIPUFY   Laravel
-		  VINCENTTG  PHP DE MERDE
+                   Laravel
+		   TORTUE CONTRE GODZILLA
                 </div>
 
                 <div class="links">
