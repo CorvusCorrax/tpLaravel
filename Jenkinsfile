@@ -14,7 +14,7 @@ pipeline {
     stage('Deploy') {
       steps {
         sh 'echo bonjour'
-        sh 'cd tpLaravel && rocketeer deploy'
+        sh 'rocketeer deploy'
       }
     }
   }
